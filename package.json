@@ -1,0 +1,22 @@
+{
+  "name": "smartsavor-monorepo",
+  "version": "1.0.0",
+  "description": "SmartSavor application with frontend and backend services",
+  "scripts": {
+    "install:all": "npm install && npm run install:web && npm run install:api",
+    "install:web": "cd web && npm install",
+    "install:api": "cd api && npm install",
+    "start:web": "cd web && npm run dev",
+    "start:api": "cd api && npm run dev",
+    "start": "concurrently \"npm run start:api\" \"npm run start:web\"",
+    "build": "concurrently \"cd api && npm run build\" \"cd web && npm run build\"",
+    "build:web": "cd web && npm run build",
+    "build:api": "cd api && npm run build",
+    "test:web": "cd web && npm run test",
+    "test:api": "cd api && npm run test",
+    "check:env": "cd api && node check-env.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
