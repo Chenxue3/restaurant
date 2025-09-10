@@ -1,7 +1,7 @@
 # SmartSavor
 SmartSavor is a full-stack web application designed to enhance the dining experience by connecting users with restaurants,student discounts, dishes, and food-related content.
 
-🔗 **Live Demo**: [https://smartsavor.up.railway.app/](https://smartsavor.up.railway.app/) 
+🔗 **Live Demo**: [https://zoea-resturant.vercel.app/](https://zoea-resturant.vercel.app/) 
 
 ## 📚 Documentation
 
