@@ -135,7 +135,15 @@ const testGooglePlacesConnection = async () => {
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://zoea-resturant.vercel.app',
+    'https://zoea-resturant-488p9jf0r-zoeas-projects-cd69e654.vercel.app',
+    'http://localhost:3000',
+    'http://localhost:3001'
+  ],
+  credentials: true
+}));
 app.use(helmet());
 app.use(morgan('dev'));
 
