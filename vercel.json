@@ -20,9 +20,10 @@
       "dest": "web/$1"
     }
   ],
-  "functions": {
-    "api/src/app.js": {
-      "maxDuration": 30
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "api/src/app.js"
     }
-  }
+  ]
 }
