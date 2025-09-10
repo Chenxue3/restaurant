@@ -20,7 +20,9 @@
       "dest": "web/$1"
     }
   ],
-  "env": {
-    "NODE_ENV": "production"
+  "functions": {
+    "api/src/app.js": {
+      "maxDuration": 30
+    }
   }
 }
