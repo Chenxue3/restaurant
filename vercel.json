@@ -19,5 +19,10 @@
       "src": "/(.*)",
       "dest": "web/$1"
     }
-  ]
+  ],
+  "functions": {
+    "api/src/app.js": {
+      "maxDuration": 30
+    }
+  }
 }
